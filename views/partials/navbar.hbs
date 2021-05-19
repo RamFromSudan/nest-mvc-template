@@ -1,0 +1,17 @@
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">MVC Template</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/home">Home</a>
+        {{#if isLogin }}
+          <a class="mdl-navigation__link" href="/auth/logout">Logout</a>
+        {{else}}
+          <a class="mdl-navigation__link" href="/">Login</a>
+          <a class="mdl-navigation__link" href="/user/register">Register</a>
+        {{/if}}
+      </nav>
+    </div>
+  </header>
+</div>
